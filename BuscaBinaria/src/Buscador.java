@@ -2,10 +2,7 @@ import java.util.*;
 public class Buscador {
     public static int vet[] = new int[10];
     public static int target = 15;
-    public static int inicio;
-    public static int fim;
-    public static int meio;
-
+    
     public static void inicializador() {
         Random rand = new Random();
         for(int i = 0; i < vet.length; i++){
@@ -24,6 +21,9 @@ public class Buscador {
     }
 
     public static void buscar() {
+        int inicio;
+        int fim;
+        int meio;
         boolean achou = false;
         while(inicio <= fim){
             meio = (int) ((inicio + fim) / 2);
